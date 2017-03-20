@@ -1,0 +1,2 @@
+mvn clean scala:compile compile package
+spark-submit --class target/com.test.nlp.Word2VecTest --master yarn-client *SNAPSHOT.jar path

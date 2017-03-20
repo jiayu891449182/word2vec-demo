@@ -13,6 +13,6 @@ object Word2VecTest {
     word2vec.setSeed(100)
     val word2VecModel = word2vec.fit(input)
     val synonyms = word2VecModel.findSynonyms("北京", 5)
-    synonyms
+    println(synonyms.mkString(","))
   }
 }
